@@ -1,0 +1,17 @@
+@media screen and (max-width: 992px) {
+  .match {
+    flex-direction: column;
+    gap: 0;
+  }
+  .upcoming-sec {
+    flex-direction: row;
+    background-color: white;
+  }
+  .upcoming-sec button {
+    flex: 1;
+    border: 1px solid rgb(232, 232, 232);
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
