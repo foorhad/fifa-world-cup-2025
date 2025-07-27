@@ -1,4 +1,9 @@
 @media screen and (max-width: 992px) {
+  .content-part h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
   .match {
     flex-direction: column;
     gap: 0;
@@ -6,6 +11,10 @@
   .upcoming-sec {
     flex-direction: row;
     background-color: white;
+  }
+
+  .card img {
+    width: 100%;
   }
   .upcoming-sec button {
     flex: 1;

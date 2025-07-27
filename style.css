@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: Poppins;
 }
+img {
+  max-width: 100%;
+}
 .display-flex {
   display: flex;
 }
@@ -45,18 +48,25 @@
   padding-left: 110px;
   margin: 50px auto;
 }
-header h1 {
+.content-part-sec {
+  flex: 1;
+}
+.content-part-sec img {
+  display: block;
+}
+.content-part h1 {
   font-size: 4.3rem;
   font-weight: bold;
   line-height: 60px;
 }
-header p {
+.content-part p {
   font-weight: 1rem;
   margin: 20px 0;
   max-width: 70%;
 }
 .content-part {
   width: 550px;
+  flex: 1;
 }
 .match {
   gap: 35px;
@@ -74,10 +84,7 @@ header p {
   width: 312px;
   border-radius: 10px 10px 0 0;
 }
-.card {
-  width: 312px;
-  height: 312px;
-}
+
 .card h2 {
   font-size: 1.2rem;
   font-weight: 600;
