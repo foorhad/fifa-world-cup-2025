@@ -1,4 +1,9 @@
+/* laptop device */
 @media screen and (max-width: 992px) {
+  body {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .content-part h1 {
     font-size: 3rem;
     line-height: 3rem;
@@ -22,5 +27,34 @@
   }
   .cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* mobile device */
+@media screen and (max-width: 768px) {
+  body {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+  }
+  .content-part h1 {
+    padding-top: 20px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .content-part p {
+    /* max-width: 100%; */
+    font-size: 16px;
+    margin: 15px auto;
+  }
+  .content-part .btn {
+    width: 25%;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
