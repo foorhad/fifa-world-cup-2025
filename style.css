@@ -40,6 +40,23 @@ img {
   max-width: 1280px;
   margin: auto;
 }
+
+/* animation section */
+@keyframes banner-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-10px);
+    color: green;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .banner {
   background-color: black;
   color: white;
@@ -47,17 +64,23 @@ img {
   border-radius: 30px;
   padding-left: 110px;
   margin: 50px auto;
+  animation: banner-animation 0.5s reverse;
 }
 .content-part-sec {
   flex: 1;
 }
 .content-part-sec img {
   display: block;
+  /* animation: banner-animation 0.5s forwards ease-in infinite; */
+  /* animation: banner-animation 0.5s forwards; */
 }
 .content-part h1 {
   font-size: 4.3rem;
   font-weight: bold;
   line-height: 60px;
+}
+main {
+  animation: banner-animation 0.5s reverse ease-in;
 }
 .content-part p {
   font-weight: 1rem;
